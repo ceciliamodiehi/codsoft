@@ -1,0 +1,201 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Truly Devine - Skincare Essentials</title>
+    <style>
+      body {
+        font-family: "Arial", sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(
+          to bottom,
+          #ffc0cb,
+          #ff69b4
+        ); /* Light pink to dark pink gradient */
+        color: #333;
+        line-height: 1.6;
+      }
+
+      header {
+        background: linear-gradient(to right, #ff6b6b, #ffb347);
+        padding: 20px;
+        text-align: center;
+        color: #fff;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      h1,
+      h2,
+      p {
+        margin: 0;
+      }
+
+      h1 {
+        font-size: 2.5em;
+        color: #333;
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        font-size: 1.8em;
+        color: #555;
+      }
+
+      p {
+        font-size: 1.1em;
+        color: #666;
+        margin-bottom: 20px;
+      }
+
+      .cta-button {
+        display: inline-block;
+        padding: 10px 20px;
+        background: linear-gradient(to bottom, #ff6b6b, #ffb347);
+        color: #fff;
+        text-decoration: none;
+        font-size: 1.2em;
+        font-weight: bold;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+        transition: background 0.3s ease-in-out;
+      }
+
+      .cta-button:hover {
+        background: linear-gradient(to bottom, #ffb347, #ff6b6b);
+      }
+
+      .circle-container {
+        text-align: center;
+      }
+
+      .circle {
+        display: inline-block;
+        overflow: hidden;
+        border-radius: 50%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      }
+
+      .product-image {
+        max-width: 100%;
+        height: auto;
+        border-radius: 50%;
+      }
+
+      .features-section {
+        background: #f9f9f9;
+        padding: 40px;
+        text-align: center;
+      }
+
+      .feature-item {
+        margin-bottom: 20px;
+      }
+
+      .feature-icon {
+        font-size: 2em;
+        margin-bottom: 10px;
+      }
+
+      .testimonial-section {
+        background: #fff;
+        padding: 40px;
+        text-align: center;
+      }
+
+      .testimonial-quote {
+        font-style: italic;
+        margin-bottom: 20px;
+      }
+
+      .testimonial-author {
+        font-weight: bold;
+      }
+
+      .contact-section {
+        background: #f9f9f9;
+        padding: 40px;
+        text-align: center;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Truly Devine - Skincare Essentials</h1>
+      <h2>Redefining Beauty, Transforming Skin</h2>
+      <p>
+        Welcome to Truly Devine, where beauty meets transformation! Discover the
+        magic of our skincare essentials.
+      </p>
+      <a href="#features" class="cta-button">Explore Features</a>
+    </header>
+
+    <div class="circle-container">
+      <div class="circle">
+        <!-- Replace the following line with the new image URL -->
+        <img
+          src="https://img.freepik.com/premium-photo/sexy-young-black-woman-using-body-lotion-after-shower_116547-57700.jpg"
+          alt="Truly Devine Lotion"
+          class="product-image"
+        />
+      </div>
+    </div>
+
+    <div id="features" class="features-section">
+      <h2>About Truly Devine Lotions</h2>
+      <p>
+        Truly Devine, where beauty meets transformation! We are more than just a
+        skincare brand – we are your partners in the journey to discover the
+        true divinity within you. Our flagship Truly Devine lotions redefine
+        beauty by addressing a spectrum of skincare needs, from banishing
+        pimples and dark marks to defying aging and achieving a luminous glow.
+        Our specialized Whitening Elegance lotion is your secret weapon for an
+        even and radiant complexion.
+      </p>
+      <a href="#testimonials" class="cta-button">Read Testimonials</a>
+    </div>
+
+    <div id="testimonials" class="testimonial-section">
+      <h2>What Our Customers Say</h2>
+      <p class="testimonial-quote">
+        "Truly Devine lotions have transformed my skincare routine. My skin
+        feels rejuvenated and radiant!"
+      </p>
+      <p class="testimonial-author">- Tshifhiwa Devine Maroga</p>
+      <p class="testimonial-quote">
+        "The Whitening Elegance lotion worked wonders for my complexion. Truly
+        Devine is a game-changer!"
+      </p>
+      <p class="testimonial-author">- Siphiwe Maroga</p>
+      <a href="#contact" class="cta-button">Contact Us</a>
+    </div>
+
+    <div id="contact" class="contact-section">
+      <h2>Contact Us</h2>
+      <p>Have questions or ready to place an order? Contact Truly Devine:</p>
+      <p>Phone: 0765500745</p>
+      <p>Email: mathildamaroga@gmail.com</p>
+      <a href="https://trulydevine.simplybook.me" class="cta-button"
+        >Book an Appointment</a
+      >
+    </div>
+
+    <script>
+      document
+        .querySelector(".cta-button")
+        .addEventListener("click", function () {
+          let name = prompt("What is your name?");
+          if (name && name.trim() !== "") {
+            alert(
+              "Thanks, " +
+                name +
+                " , we will be in touch. Meanwhile, discover the magic of Truly Devine!"
+            );
+          } else {
+            alert("No name, no magic of Truly Devine for you!");
+          }
+        });
+    </script>
+  </body>
+</html>
